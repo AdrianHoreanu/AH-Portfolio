@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100;400&display=swap');
+
+body{
+	font-family: 'Big Shoulders Display', cursive;
+	line-height: 1.4;
+	background-color: #84EBEF;
+	width: 500px;
+	margin: auto;
+}
+
+form{
+	background-color: #EF8784;
+	padding: 2rem 2rem;
+	border-radius: 2rem;
+	width: 500px;
+	margin: auto;
+}
+
+.submit-button{
+	width: 100%;
+	padding: 0.75rem;
+	background-color: pink;
+	border-radius: 2px;
+	cursor: pointer;
+}
+
+.input-headings{
+	margin: 0 auto 1.25rem auto;
+	padding: 0.25rem;
+}
+
+.form-inputs{
+	display: block;
+	width: 90%;
+	height: 2rem;
+	padding: 0.25rem 0.75rem;
+	background-color: #fff;
+	border: 1px solid red;
+	border-radius: 0.25rem;
+}
+
+.form-input-textarea{
+	display: block;
+	width: 90%;
+	height: 10rem;
+	padding: 0.25rem 0.75rem;
+	background-color: #fff;
+	border: 1px solid red;
+	border-radius: 0.25rem;
+}

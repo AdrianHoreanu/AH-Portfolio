@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	<title>Buyin' Stuff That Don't Matter</title>
+	<link rel="stylesheet" type="text/css" href="FCCTR-Survey.css">
+
+</head>
+
+<header>
+
+<h1 id="title">Are you sure you wanna buy this?</h1>
+
+</header>
+
+<body>
+
+<p id="description">Fill details below to complete your purchase of useless stuff </p>
+
+<form id="surrvey-form">
+
+	<div class="input-headings">
+
+	<label for="name" id="name-label">Name </label> <!-- for pt label = id input mai jos to bind them -->
+	<input id="name" type="text" name="name" placeholder="Enter Full Name" class="form-inputs" required></input> <!-- name - ce recunoaste serverul ca value/requred- este necesar - to check ="" pt required -->
+	<br>
+	<label for="email" id="email-label">Email </label>
+	<input id="email" type="email" name="email" placeholder="Enter Email Address" class="form-inputs" required></input><!-- type email - nu te lasa sa bagi altceva decat email cu @ -->
+	<br>
+	<label for="number" id="number-label">Age </label>
+	<input id="number" type="number" name="number" placeholder="Age" min="18" max="68" class="form-inputs" required></input>
+	
+	<br>
+	<br>
+	<label for="dropdown" id="options1">Select Useless Stuff</label>
+	<select id="dropdown" class="form-inputs"> <!-- same ID as the prev label-->
+		<option value="Expensive_Stuff">Expensive Stuff</option>
+		<option value="Very_Expensive_Stuff">Very Expensive Stuff</option>
+		<option value="Utterly_Expensive_Stuff">Utterly Expensive Stuff</option>
+		<option value="Why_would_you_buy_this?">Why would you buy this?</option> <!-- use underscore instead of space in the value of the dropdown option -->
+	</select>
+	
+	<br>
+	<br>
+	<label for="type_of_stuff" id="type_of_stuff"><b>Type of stuff:</b></label>
+		<br>
+		<input id="type_of_stuff" type="radio" id="Bling Bling" name="options2" value="Bling Bling">
+		<label for="type_of_stuff">Bling Bling</label>
+		<br>
+		<input id="type_of_stuff" type="radio" id="Silver" name="options2" value="Silver">
+		<label for="type_of_stuff">Silver</label>
+		<br>
+		<input id="type_of_stuff" type="radio" id="Gold" name="options2" value="Gold">
+		<label for="type_of_stuff">Gold</label>
+		<br>
+		<input id="type_of_stuff" type="radio" id="Platinum" name="options2" value="Platinum">
+		<label for="type_of_stuff">Platinum</label> <!--Radio buttons-->
+	
+	<br>
+	<br>
+	<label for="features"><b>Add features</b></label>
+	<br>
+	<input id="checkbox" type="checkbox" name="features" value="ring">
+	<label for="checkbox">Flashy Ring - 5k$</label>
+	<br>
+	<input id="checkbox" type="checkbox" name="features" value="gold_teeth">
+	<label for="checkbox">Gold Theets - 7.5k$</label>
+	<br>
+	<input id="checkbox" type="checkbox" name="features" value="10kg_gold_necklace">
+	<label for="checkbox">10Kg Gold Necklace - 15k$</label> <!--check boxes (to lookup how to be able to select only one, but the above radio buttons do that)-->
+	
+	<br>
+	<br>
+	<label id="textarea"><b>Additional Useless Bling You May Want</b></label>
+	<br>
+	<textarea id="textarea" name="user_input" class="form-input-textarea" ></textarea> <!--text area-->
+	
+	<br>
+	<br>
+	<input id="submit" type="submit" value="Place Order" class="submit-button"><!-- submit button-->
+
+	</div>
+</form>
+
+</body>
+
+</html>	
