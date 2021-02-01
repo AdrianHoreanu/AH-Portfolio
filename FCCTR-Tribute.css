@@ -1,0 +1,42 @@
+#img-caption {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#title {
+  font-size: 48px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 95%;
+  margin: auto;
+}
+
+.column {
+  flex: 49.5%;
+  max-width: 49.5%;
+  }
+
+.column img {
+  vertical-align: middle;
+  width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 99%;
+    max-width: 99%;
+  }
+}
+
+.textc {
+  text-align: center;
+}
+
+.seven {
+  display: block;
+  max-width: 75%;
+  margin:auto;
+}
