@@ -7,31 +7,55 @@
 body {
 	font-family: 'Big Shoulders Display', cursive;
 	font-size: 1.5em;
-	margin: 0;
+	margin: 50px; /*compensate for nav bar*/
 	line-height: 1.5;
 }
 
+
+html {
+	scroll-padding-top: 90px; /* height of sticky header */
+}
+
+/*imgs to be at 100% of the container*/
 img {
+	border-radius: 5px;
 	max-width: 100%;
 }
 
-
+/*shadow for header img*/
 #header-img {
-	box-shadow: 2px 2px 2px gray; 
+	box-shadow: 2px 2px 10px gray; 
 }
 
+iframe {
+	box-shadow: 2px 2px 10px gray;	
+}
+
+/*h2 heading in the sections to align to center*/
 section h2 {
 	text-align: center;
-	margin-top: 40px;
+	margin-top: 30px;
+}
+
+/*Buttons*/
+/*removing border from button and inherit other attributes from css as this is set as default with border etc*/
+button {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
 }
 
 .btn {
 	text-decoration: none;
-	background-color: gray;
-	padding: 10px 25px;
+	background-color: lightgray;
+	padding: 9px 10px;
 	color: black;
 	border-radius: 5px;
-	box-shadow: 2px 2px 2px black; 
+	box-shadow: 2px 2px 5px gray; 
 	/*to make it look like it is moving*/
 	display: inline-block;
 	position: relative;
@@ -43,21 +67,27 @@ section h2 {
 	transform: translate(2px, 2px);
 }
 
-/*Nav and header*/
-
+/*general container*/
 .container {
 	display: flex;
+	flex-wrap: wrap;
 	max-width: 800px;
 	margin: 10px auto;
 	justify-content: center;
 	/*border: 1px solid;*/
 }
 
+/*Nav and header*/
 nav {
 	background-color: lightgray;
 	display: flex;
 	justify-content: center;
-	padding: 15px;	
+	padding: 15px;
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	box-shadow: 2px 2px 5px gray;
 }
 
 .nav-link {
@@ -82,7 +112,7 @@ nav {
 	border-radius: 10px;
 	box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);
 	text-align: center; /*this applies for the 2 classes* below optimizing code */
-	margin: 0 3.33%;/* top 0px and left the remaining from 33.33-30% */
+	margin: 0 1.5%;/* top 0px and left the remaining from 33.33-30% */
 	width: 30%;
 	padding: 20px;
 	background: lightgray;
@@ -114,6 +144,18 @@ nav {
 	line-height: 0.5;	
 }
 
+/*Form styles*/
+
+form input {
+	border-radius: 5px;
+	border: 1px solid;
+	display: inline-block;
+	padding: 10px 25px;
+	font:inherit;
+	margin-right: 10px;
+	text-align: center;	
+}
+
 /*footer styles */
 footer {
 	background-color: lightgrey;
@@ -129,15 +171,9 @@ ul {
   padding: 0;
 }
 
-@media (min-width: 900px) {
-  .background11 {
-    padding: 0 0 25px;
-  }
-}
-
 .container11 {
   margin: 0 auto;
-  padding: 50px 0 0;
+  padding: 0;
   max-width: 800px;
   width: 100%;
 }
@@ -146,7 +182,6 @@ ul {
   background-color: #fff;
   border-radius: 10px;
   padding: 15px 25px;
-  position: relative;
   width: 100%;
   z-index: 10;
 }
@@ -157,7 +192,10 @@ ul {
   flex-direction: column;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 900px) {	
+  .container {
+  	flex-direction: row;
+  }
   .pricing-table {
     flex-direction: row;
   }
@@ -253,3 +291,35 @@ ul {
   color: white;
 }
 /*END OF INTEGRATION*/
+
+/*Media querry REMEMBER WIDTH IS THE IMPORTANT CARACTERISTIC HERE FOR DISPLAY:FLEX*/
+@media (max-width: 900px) {
+	.header-left, .header-right {
+		width: 100%;
+	}
+	.header-right: {
+		order: 1;
+	}
+	.header-left {
+		order: 0;
+		text-align: center; 
+	}
+	.feature {
+		margin: 10px;
+		width: 100%;
+	}
+	form input {
+		display: flex;
+		flex-wrap: wrap;
+		width: 100%;
+	}
+	form button {
+		margin-top: 10px;
+		display: flex;
+		flex-wrap: wrap;
+		width: 100%;
+	}
+
+/*IFRAME resizing needs to be done with JavaScript*/
+
+}
