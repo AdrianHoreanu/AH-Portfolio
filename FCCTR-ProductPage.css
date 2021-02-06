@@ -1,0 +1,118 @@
+/* to do it in order first general stuff and then follow the page. Also, think about order (to learn).*/
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;800&display=swap');
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Big Shoulders Display', cursive;
+	font-size: 1.5em;
+	margin: 0;
+	line-height: 1.5;
+}
+
+img {
+	max-width: 100%;
+}
+
+section h2 {
+	text-align: center;
+	margin-top: 40px;
+}
+
+.btn {
+	text-decoration: none;
+	background-color: lightgray;
+	padding: 10px 25px;
+	color: black;
+	border-radius: 5px;
+	box-shadow: 2px 2px 2px gray; 
+	/*to make it look like it is moving*/
+	display: inline-block;
+	position: relative;
+	transition: all 0.1s ease;
+}
+
+.btn:active {
+	box-shadow: 0 0 0 gray;
+	transform: translate(2px, 2px);
+}
+
+/*Nav and header*/
+
+.container {
+	display: flex;
+	max-width: 800px;
+	margin: 10px auto;
+	justify-content: center;
+	/*border: 1px solid;*/
+}
+
+nav {
+	background-color: lightgray;
+	display: flex;
+	justify-content: center;
+	padding: 15px;
+}
+
+.nav-link {
+	color: black;
+	text-decoration: none;
+	margin: 0 15px;
+}
+
+.header-left {
+	padding-right: 50px;
+	width: 60%;
+}
+.header-right {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 40%;
+}
+
+/*Features*/
+.feature {
+	border-radius: 10px;
+	box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);
+	text-align: center; /*this applies for the 2 classes* below optimizing code */
+	margin: 0 3.33%;/* top 0px and left the remaining from 33.33-30% */
+	width: 30%;
+	padding: 20px;
+	background: lightgray;
+}
+
+.feature h2 {
+	font-size: 1.3em;
+}
+
+.feature p {
+	font-size: 1em;
+}
+
+.feature img {
+	width: 25%;
+	margin-top: 15px;
+}
+
+.texttoright {
+	display: flex;
+	max-width: 800px;
+	margin: 10px auto;
+	justify-content: flex-end; 
+	padding: 0;
+}
+.texttoright p {
+	font-size: 0.75em;
+	margin-top: 0;
+	line-height: 0.5;	
+}
+
+/*footer styles */
+footer {
+	background-color: lightgrey;
+	margin-top: 20px;
+	padding: 10px;
+	text-align: center;
+}
