@@ -192,7 +192,7 @@ ul {
   flex-direction: column;
 }
 
-@media (min-width: 900px) {	
+@media only screen and (min-width: 900px) {	
   .container {
   	flex-direction: row;
   }
@@ -215,7 +215,7 @@ ul {
   border-bottom: none;
 }
 
-@media (min-width: 900px) {
+@media only screen and (min-width: 900px) {
   .pricing-plan {
     border-bottom: none;
     border-right: 1px solid #e1f1ff;
@@ -293,7 +293,7 @@ ul {
 /*END OF INTEGRATION*/
 
 /*Media querry REMEMBER WIDTH IS THE IMPORTANT CARACTERISTIC HERE FOR DISPLAY:FLEX*/
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) {
 	.header-left, .header-right {
 		width: 100%;
 	}
