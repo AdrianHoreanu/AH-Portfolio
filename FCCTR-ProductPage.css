@@ -47,6 +47,7 @@ button {
 	font: inherit;
 	cursor: pointer;
 	outline: inherit;
+  text-align: center;
 }
 
 .btn {
@@ -58,6 +59,7 @@ button {
 	box-shadow: 2px 2px 5px gray; 
 	/*to make it look like it is moving*/
 	transition: all 0.1s ease;
+  text-align: center;
 }
 
 .btn:active {
@@ -310,12 +312,14 @@ ul {
 		display: flex;
 		flex-wrap: wrap;
 		width: 100%;
+    text-align: center;
 	}
 	form button {
 		margin-top: 10px;
 		display: flex;
 		flex-wrap: wrap;
 		width: 100%;
+    text-align: center;
 	}
 
 /*IFRAME resizing needs to be done with JavaScript*/
