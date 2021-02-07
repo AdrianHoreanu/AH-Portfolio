@@ -10,14 +10,14 @@
 <body>
 	<header id="header">
 		<nav id="nav-bar">
-			<a href="FCCTR-ProductPage.html" class="nav-link">Home</a>
+			<a href="#home" class="nav-link">Home</a>
 			<a href="#features" class="nav-link">Features</a>
-			<a href="#video" class="nav-link">Reaction</a>
+			<a href="#videowrapper" class="nav-link">Reaction</a>
 			<a href="#pricing" class="nav-link">Pricing</a>
 			<a href="#join" class="nav-link">Join</a>
 		</nav>
 
-		<div class="container">
+		<div id="home" class="container">
 			<div class="header-left">
 				<h1>Buy My Photos</h1>
 				<p>High <b>quality</b> pictures for your home! Your friends will be amazed by the depth of your intellect for choosing these amazing frames for your walls. When your friends say "WOW", put their email below (we will definitely spam them)!</p>				
@@ -52,10 +52,10 @@
 		</div>
 	</section>
 
-	<section id="video">
+	<section id="videowrapper">
 		<h2>How your mind will react when you hang my art on your wall:</h2>
 		<div class="container">
-			<iframe width="800" height="450" src="https://www.youtube.com/embed/eh49xHJXhqo?start=372" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="Your Reaction"></iframe>
+			<iframe id="video" width="800" height="450" src="https://www.youtube.com/embed/eh49xHJXhqo?start=372" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="Your Reaction"></iframe>
 		</div>
 		<div class="texttoright">
 		<p>Video above is used for illustration purposes only.</p>
@@ -108,10 +108,10 @@
 
 	<section id="join">
 		<div class="container">
-			<form id="form" action="">
+			<form id="form" action="https://www.freecodecamp.org/email-submit">
 				<h2>Join my Newsletter</h2>
-					<input type="email" name="email" placeholder="Enter your email..." size="50" id="email">
-					<button class="btn" id="submit">Submit</button>
+					<input type="email" name="email" placeholder="Enter your email..." size="50" id="email" required>
+					<button class="btn" id="submit"t type="submit">Submit</button>
 			</form>
 			</div>
 	</section>
