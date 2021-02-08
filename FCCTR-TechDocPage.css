@@ -4,6 +4,10 @@
 	box-sizing: border-box;
 }
 
+html {
+	scroll-padding-top: 250px; /* height of sticky header */
+}
+
 body {
 	font-family: 'Raleway', sans-serif;
 	display: flex;
@@ -63,6 +67,7 @@ code {
 @media (max-width: 600px), (pointer: none), (pointer:coarse) {
 	body {
 		flex-direction: column;
+		padding-top: 250px;
 	}
 	nav{
 		border-right: none;
