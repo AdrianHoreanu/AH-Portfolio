@@ -16,7 +16,7 @@ body{
 
 nav {
 	background-color: #F5A89A;
-	color: #2b12b6;
+	color: black;
 	display: flex;
 	justify-content: flex-end;
 	padding: 15px;
@@ -54,7 +54,7 @@ header p {
 
 footer {
 	background-color: #F5A89A;
-	color: #2b12b6;
+	color: black;
 	padding: 10px;
 	text-decoration: none;
 	text-align: center;
