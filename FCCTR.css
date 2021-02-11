@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;500;700&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	scroll-padding-top: 50px; /* height of sticky header */
+}
+
+body{
+	background-color: #76B2ED; /*#F40B19 #8EF40B #0BF4E6; #710BF4*/
+	font-family: "JetBrains Mono", monos pace, sans-serif;
+	margin: 0;
+}
+
+nav {
+	background-color: #F5A89A;
+	color: #2b12b6;
+	display: flex;
+	justify-content: flex-end;
+	padding: 15px;
+	position: fixed;
+	z-index: 100;
+	top:0;
+	left:0;
+	right:0;
+}
+nav a {
+	margin-left: 10px;
+	text-decoration: none;
+}
+
+nav a:hover {
+	text-decoration: underline;
+}
+
+header{
+	height: 100vh;
+	background-image: url("https://4kwallpaper.wiki/wp-content/uploads/2019/07/99718.jpg");
+	background-size: cover;
+	background-position: center center;
+	position: relative;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	padding-top: 50px;
+}
+
+header p {
+	margin: 0;
+}
+
+footer {
+	background-color: #F5A89A;
+	color: #2b12b6;
+	padding: 10px;
+	text-decoration: none;
+	text-align: center;
+}
+
+.projects-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	max-width: 1200px;
+	margin: 20px auto 0;
+}
+.project-tile {
+	max-width: 350px;
+	margin: 10px;
+	transition: transform 0.3s ease;
+}
+
+.project-tile:hover {
+	transform: scale(1.05);
+}
+
+.project-tile img{
+	max-width: 100%
+}
+
+.project-tile p {
+	margin-top: 10px;
+}
+
+header::after {
+	content: '';
+	background-color: #000;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	opacity: 0.8;
+}
+
+header * {
+	position: relative;
+	z-index: 1;
+}
+
+section {
+	justify-content: center;
+	text-align:center;
+}
+
+section h2 {
+	margin-bottom: 0;
+}
+section p {
+	margin-top: 0;
+}
+
+ul {
+	display: flex;
+	list-style-type: none;
+	justify-content: center;	
+}
+
+li {
+	padding-right: 25px;
+}
+
+li img {
+	border-radius: 50%;
+	border: 2px solid;	
+}
+
+@media (pointer: none), (pointer:coarse) {
+	section {padding: 20px;}
+}
