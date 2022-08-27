@@ -48,6 +48,9 @@ var fallCounter = 0;
 var presskeystart = 0;
 var win = true;
 
+//Image variables
+var dogn;
+
 function preload()
 {
     soundFormats("mp3","wav");
@@ -72,6 +75,8 @@ function preload()
     
     winSound = loadSound("Sounds/win.wav");
     winSound.setVolume(0.5); 
+    
+    dogn = loadImage("Images/dognose.jpg")
 }
 
 function setup()
@@ -769,15 +774,13 @@ function renderFlagpole()
     if (flagpole.isReached&&game_score==collectables.length&&dist(gameChar_world_x,gameChar_y,flagpole.x_pos,floorPos_y)<30)
     {
         fill(0,0,255,255);
-        rect(flagpole.x_pos,floorPos_y-150, 50, 40);
-        fill(255,0,0);
-        rect(flagpole.x_pos+7.5,floorPos_y-142.5, 35, 25);
+        rect(flagpole.x_pos, floorPos_y-150, 50, 40);
+        image(dogn, flagpole.x_pos+7.5, floorPos_y-142.5);
     }
     else
     {   fill(0,0,255);
         rect(flagpole.x_pos,floorPos_y-50, 50, 40);
-        fill(255,0,0);
-        rect(flagpole.x_pos+7.5,floorPos_y-42.5, 35, 25);
+        image(dogn, flagpole.x_pos+7.5, floorPos_y-42.5);
     }
     pop();
 }
@@ -1038,7 +1041,14 @@ function Enemy(x,y, range)
     {
         var d = dist(gc_x,gc_y, this.currentX, this.y);
         
-        if (d<100)
+        if (d<125)
+            {
+                fill(255, 255, 0);
+                rect(this.currentX-15, this.y-15, 10, 10, 3);
+                rect(this.currentX+5, this.y-15, 10, 10, 3);
+            }
+        
+        if (d<75)
             {
                 fill(255, 0, 0);
                 rect(this.currentX-15, this.y-15, 10, 10, 3);
